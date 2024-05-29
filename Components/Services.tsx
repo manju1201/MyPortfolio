@@ -29,7 +29,7 @@ const Services = () => {
             <h1 className='text-[20px] md:text-[30px] mt-[1.5rem] mb-[0.5rem]'>ML Engineer</h1>
             <p className='text-[16px] text-[#d3d2d2] mb-[1.5rem]'>Wipro Research<br/>May 2021 – Dec 2021<br/>Bangalore, India</p>
             <ul className='text-[14px] text-[#d3d2d2] font-sans list-disc list-outside text-left space-y-2'>
-              <li>Collaborated with a group of 5 members to design and implement a "Fake News Detection" surpassing SOTA by 14.9%.</li>
+              <li>Collaborated with a group of 5 members to design and implement a Fake News Detection surpassing SOTA by 14.9%.</li>
               <li>Utilized React.js to design user interface, enabling smooth user interactions for over 1,000 daily users.</li>
               <li>Engineered a scalable back-end architecture using Node.js and Express, handling over 10,000 API requests per day.</li>
               <li>Architected a CI/CD pipeline for the fake news detection application on Heroku, achieving 99.9% uptime.</li>
@@ -43,7 +43,7 @@ const Services = () => {
             <h1 className='text-[20px] md:text-[30px] mt-[1.5rem] mb-[0.5rem]'>Software Developer</h1>
             <p className='text-[16px] text-[#d3d2d2] mb-[1.5rem]'>Iha Pragyan<br/>Feb 2021 – May 2021<br/> Hyderabad, India</p>
             <ul className='text-[14px] text-[#d3d2d2] font-sans list-disc list-outside text-left space-y-2'>
-              <li>Boosted task management efficiency by 20% in team "GhettoGroupo" through advanced CRUD functionality.</li>
+              <li>Boosted task management efficiency by 20% in team GhettoGroupo through advanced CRUD functionality.</li>
               <li>Integrated Stripe checkout, leading to a rise in successful transactions and streamlined authentication processes.</li>
               <li>Established developer portal for REST API access, attracting 30% more third-party integrations like social media sharing.</li>
               <li>Introduced Whiteboard and audio rooms, elevating user engagement by 25% in project discussions & breaks.</li>
