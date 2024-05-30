@@ -1,59 +1,156 @@
-import { CodeBracketSquareIcon, CommandLineIcon, RocketLaunchIcon } from '@heroicons/react/20/solid'
-import React from 'react'
+import {
+  CodeBracketSquareIcon,
+  CommandLineIcon,
+  RocketLaunchIcon,
+} from "@heroicons/react/20/solid";
+import React from "react";
 
 const Services = () => {
   return (
-    <div className='bg-[#121212] pt-[4rem] md:pt-[8rem] pb-[5rem]'>
-      <p className='heading'>    
-        My <span className='text-yellow-400'>Experiences</span>   
+    <div className="bg-[#121212] pt-[4rem] md:pt-[8rem] pb-[5rem]">
+      <p className="heading">
+        My <span className="text-yellow-400">Experiences</span>
       </p>
-      <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-[80%] mx-auto items-center gap-[3rem] mt-[4rem] text-white'>
-        
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-[80%] mx-auto items-center gap-[3rem] mt-[4rem] text-white">
         <div data-aos="fade-right">
-          <div className='bg-red-700 hover:scale-110 transform transition-all duration-300 hover:-rotate-6 font-semibold text-center p-[2rem]'>
-            <CodeBracketSquareIcon className='w-[6rem] h-[6rem] mx-auto text-[#d3fae8]'/>
-            <h1 className='text-[20px] md:text-[30px] mt-[1.5rem] mb-[0.5rem]'>Software Engineer, DS</h1>
-            <p className='text-[16px] text-[#d3d2d2] mb-[1.5rem]'>AI Institute, University of South Carolina<br/>Jan 2022 – July 2022<br/> Columbia, SC, USA</p>
-            <ul className='text-[14px] text-[#d3d2d2] font-sans list-disc list-outside text-left space-y-2'>
-              <li>Built a benchmark for Joint Embedding with a six-stage architecture in Memotion Analysis on Twitter Memes.</li>
-              <li>Surpassed SOTA in Memotion Classification tasks: Sentiment: +16%, Humor: +4.6%, Scales of semantic: +14.6%</li>
-              <li>Built a MERN app, leveraging React to enhance user interaction with a 15% improvement in interface responsiveness.</li>
-              <li>Implemented backend using Node.js & MongoDB, improving data processing efficiency and functionality by 25%.</li>
-            </ul>
+          <div
+            className="bg-[#09101a] hover:scale-110 transform transition-all duration-300 hover:-rotate-6 font-semibold text-center p-[2rem]"
+            style={{
+              boxShadow:
+                "rgba(255, 255, 255, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;",
+            }}
+          >
+            <CodeBracketSquareIcon className="w-[6rem] h-[6rem] mx-auto text-[#d3fae8]" />
+            <h1 className="text-[20px] md:text-[30px] mt-[1.5rem] mb-[0.5rem]">
+              Software Engineer, DS
+            </h1>
+            <p className="text-[16px]  text-[#55e6a5] mb-[1.5rem]">
+              AI Institute @ USC
+              <br />
+              Jan 2022 – July 2022
+              <br /> Columbia, SC, USA
+            </p>
+            <div className="text-[14px] text-[#d3d2d2] font-sans text-left space-y-2">
+              <p>
+                Developed a six-stage architecture for Joint Embedding in
+                Memotion Analysis, surpassing SOTA in classification tasks, and
+                built a responsive MERN app, enhancing user interaction and
+                backend efficiency.
+              </p>
+              <h3 className="font-semibold  text-[#55e6a5]">Skills Used:</h3>
+              <div className="grid grid-cols-2 gap-x-4">
+                <ul className="list-disc list-outside space-y-1">
+                  <li>JavaScript</li>
+                  <li>React</li>
+                  <li>Node.js</li>
+                  <li>Express.js</li>
+                  <li>MongoDB</li>
+                </ul>
+                <ul className="list-disc list-outside space-y-1">
+                  <li>Machine Learning</li>
+                  <li>NLP</li>
+                  <li>Data Processing</li>
+                  <li>Benchmarking</li>
+                  <li>Performance Optimization</li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
 
         <div data-aos="zoom-in" data-aos-delay="300">
-          <div className='bg-orange-700 hover:scale-110 transform transition-all duration-300 font-semibold text-center p-[2rem]'>
-            <RocketLaunchIcon className='w-[6rem] h-[6rem] mx-auto text-[#d3fae8]'/>
-            <h1 className='text-[20px] md:text-[30px] mt-[1.5rem] mb-[0.5rem]'>ML Engineer</h1>
-            <p className='text-[16px] text-[#d3d2d2] mb-[1.5rem]'>Wipro Research<br/>May 2021 – Dec 2021<br/>Bangalore, India</p>
-            <ul className='text-[14px] text-[#d3d2d2] font-sans list-disc list-outside text-left space-y-2'>
-              <li>Collaborated with a group of 5 members to design and implement a Fake News Detection surpassing SOTA by 14.9%.</li>
-              <li>Utilized React.js to design user interface, enabling smooth user interactions for over 1,000 daily users.</li>
-              <li>Engineered a scalable back-end architecture using Node.js and Express, handling over 10,000 API requests per day.</li>
-              <li>Architected a CI/CD pipeline for the fake news detection application on Heroku, achieving 99.9% uptime.</li>
-            </ul>
+          <div
+            className="bg-[#09101a] hover:scale-110 transform transition-all duration-300 hover:-rotate-6 font-semibold text-center p-[2rem]"
+            style={{
+              boxShadow:
+                "rgba(255, 255, 255, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;",
+            }}
+          >
+            <RocketLaunchIcon className="w-[6rem] h-[6rem] mx-auto text-[#d3fae8]" />
+            <h1 className="text-[20px] md:text-[30px] mt-[1.5rem] mb-[0.5rem]">
+              ML Engineer
+            </h1>
+            <p className="text-[16px] text-[#55e6a5] mb-[1.5rem] ">
+              Wipro Research
+              <br />
+              May 2021 – Dec 2021
+              <br />
+              Bangalore, India
+            </p>
+            <div className="text-[14px] text-[#d3d2d2] font-sans text-left space-y-2">
+              <p>
+                Built a Fake News Detection system surpassing SOTA by 14.9%,
+                designed user-friendly React.js interface, engineered a scalable
+                Node.js backend, and implemented a CI/CD pipeline on Heroku.
+              </p>
+              <h3 className="font-semibold text-[#55e6a5]">Skills Used:</h3>
+              <div className="grid grid-cols-2 gap-x-4">
+                <ul className="list-disc list-outside space-y-1">
+                  <li>JavaScript</li>
+                  <li>React.js</li>
+                  <li>Node.js</li>
+                  <li>Express.js</li>
+                  <li>API Design</li>
+                </ul>
+                <ul className="list-disc list-outside space-y-1">
+                  <li>CI/CD</li>
+                  <li>Heroku</li>
+                  <li>Scalability</li>
+                  <li>Team Collaboration</li>
+                  <li>Social Media</li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
 
         <div data-aos="fade-left" data-aos-delay="500">
-          <div className='bg-blue-700 hover:scale-110 transform transition-all duration-300 hover:rotate-6 font-semibold text-center p-[2rem]'>
-            <CommandLineIcon className='w-[6rem] h-[6rem] mx-auto text-[#d3fae8]'/>
-            <h1 className='text-[20px] md:text-[30px] mt-[1.5rem] mb-[0.5rem]'>Software Developer</h1>
-            <p className='text-[16px] text-[#d3d2d2] mb-[1.5rem]'>Iha Pragyan<br/>Feb 2021 – May 2021<br/> Hyderabad, India</p>
-            <ul className='text-[14px] text-[#d3d2d2] font-sans list-disc list-outside text-left space-y-2'>
-              <li>Boosted task management efficiency by 20% in team GhettoGroupo through advanced CRUD functionality.</li>
-              <li>Integrated Stripe checkout, leading to a rise in successful transactions and streamlined authentication processes.</li>
-              <li>Established developer portal for REST API access, attracting 30% more third-party integrations like social media sharing.</li>
-              <li>Introduced Whiteboard and audio rooms, elevating user engagement by 25% in project discussions & breaks.</li>
-            </ul>
+          <div
+            className="bg-[#09101a] hover:scale-110 transform transition-all duration-300 hover:-rotate-6 font-semibold text-center p-[2rem]"
+            style={{
+              boxShadow:
+                "rgba(255, 255, 255, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;",
+            }}
+          >
+            <CommandLineIcon className="w-[6rem] h-[6rem] mx-auto text-[#d3fae8]" />
+            <h1 className="text-[20px] md:text-[30px] mt-[1.5rem] mb-[0.5rem]">
+              Software Developer
+            </h1>
+            <p className="text-[16px] text-[#55e6a5] mb-[1.5rem]">
+              Iha Pragyan
+              <br />
+              Feb 2021 – May 2021
+              <br /> Hyderabad, India
+            </p>
+            <div className="text-[14px] text-[#d3d2d2] font-sans text-left space-y-2">
+              <p>
+                Enhanced task management by 20%, integrated Stripe checkout,
+                developed a REST API boosting integrations by 30%, and added
+                Whiteboard and audio rooms, increasing user engagement by 25%.
+              </p>
+              <h3 className="font-semibold">Skills Used:</h3>
+              <div className="grid grid-cols-2 gap-x-4">
+                <ul className="list-disc list-outside space-y-1">
+                  <li>JavaScript</li>
+                  <li>Bootstrap</li>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>Django</li>
+                </ul>
+                <ul className="list-disc list-outside space-y-1">
+                  <li>Django REST</li>
+                  <li>Stripe Integration</li>
+                  <li>User Engagement </li>
+                  <li>Third-party Integrations</li>
+                  <li>WebSockets</li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
-
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Services
+export default Services;

@@ -6,7 +6,7 @@ const Blog = () => {
   return (
     <div className="pt-[4rem] md:pt-[8rem] pb-[4rem] bg-[#02050a]">
       <h1 className="heading">
-        My <span className="text-yellow-400">Publication</span>
+        My <span className="text-yellow-400">Publications</span>
       </h1>
       <div className="grid grid-cols-1 lg:grid-cols-1 xl:grid-cols-1 mt-[4rem] gap-[3rem] w-[70%] mx-auto">
         <div>
@@ -20,7 +20,7 @@ const Blog = () => {
           </div>
           <div
             className="w-[90%] text-center mx-auto bg-[#09101a] relative 
-                p-[2rem] mt-[-1rem] rounded-xl"
+                p-[2rem] mt-[-1rem] rounded-xl" style={{boxShadow: "rgba(255, 255, 255, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;"}}
           >
             <div
               className="w-fit px-[2rem] py-[1rem] bg-[#55e6a5] relative 

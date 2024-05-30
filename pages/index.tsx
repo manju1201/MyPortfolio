@@ -50,15 +50,15 @@ const HomePage = () => {
       <div>
         <MobileNav nav={nav} closeNav={closeNav} />
         <Nav openNav={openNav} />
-        <Hero />
+        <div id="hero"><Hero /></div>
         <div className="relative z-[30]">
           {/* <About /> */}
-          <Services />
-          <Skills />
-          <Projects />
+          <div id="experience"><Services /></div>
+          <div id="#education"><Skills /></div>
+          <div id="projects"><Projects /></div>
           <Testimonials />
-          <Blog />
-          <Footer />
+          <div id="publications"><Blog /></div>
+          <div id="footer"><Footer /></div>
         </div>
       </div>
     </div>

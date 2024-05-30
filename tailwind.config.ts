@@ -20,6 +20,10 @@ module.exports = {
       fontFamily: {
         primary: ["Poppins"],
       },
+      listStyleType: {
+        circle: 'circle',
+        square: 'square',
+      },
     },
   },
   plugins: [],

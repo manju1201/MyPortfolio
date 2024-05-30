@@ -147,7 +147,7 @@ const Footer = () => {
           © 2024 Manjju Shree | All rights reserved. 
         </div>
         <div className="flex items-center space-x-10">
-          <p className="text-[16px] text-[#55e6a5] opacity-90 text-right">Thank you for visiting my Portfolio</p>
+          <p className="text-[16px] text-[#55e6a5] opacity-90 text-right">Thank you for visiting my Portfolio!</p>
         </div>
       </div>
     </div>
