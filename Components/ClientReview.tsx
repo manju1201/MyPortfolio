@@ -1,38 +1,28 @@
-import { StarIcon } from "@heroicons/react/20/solid";
-import Image from "next/image";
-import React from "react";
+import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
 
 interface Props {
-  name: string;
-  role: string;
-  image: string;
+  icon: React.ReactNode;
+  title: string;
+  description: string;
+  skills: string;
+  githubLink: string;
 }
-const ClientReview = ({ name, role, image }: Props) => {
+
+const ClientReview = ({ icon, title, description, skills, githubLink }: Props) => {
   return (
-    <div className="flex flex-col text-center justify-center">
-      <Image
-        src={image}
-        alt={name}
-        width={100}
-        height={100}
-        objectFit="contain"
-        className="mx-auto mb-[2rem] rounded-full"
-      />
-      <div className="flex items-center mx-auto">
-        <StarIcon className="w-[2rem] h-[2rem] text-yellow-500"/>
-        <StarIcon className="w-[2rem] h-[2rem] text-yellow-500"/>
-        <StarIcon className="w-[2rem] h-[2rem] text-yellow-500"/>
-        <StarIcon className="w-[2rem] h-[2rem] text-yellow-500"/>
-        <StarIcon className="w-[2rem] h-[2rem] text-yellow-500"/>
+    <div className='bg-[#09101a] p-12 rounded-lg shadow-lg mx-auto w-[85%] my-8' style={{boxShadow: "rgba(255, 255, 255, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px"}}>
+      <div className='flex items-center justify-center mb-4'>
+        {icon}
+        <h1 className='ml-4 text-[20px] sm:text-[25px] md:text-[30px] text-white font-bold'>{title}</h1>
+        <a href={githubLink} target="_blank" rel="noopener noreferrer" className='ml-2'>
+          <FontAwesomeIcon icon={faGithub} className='w-6 h-6 text-white hover:text-[#55e6a5] transition-colors duration-200' />
+        </a>
       </div>
-      <h1 className="text-[25px] text-white mt-[1rem]">{name}</h1>
-      <p className="text-[18px] text-white opacity-75 mt-[0.5rem] mb-[1.4rem]">{role}</p>
-      <p className="text-[16px] text-white opacity-50 w-[90%] md:w-[50%] mx-auto">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, 
-        natus voluptatibus! Aperiam ullam assumenda error nisi tenetur 
-        magni atque mollitia reiciendis aliquid quis velit, aliquam inventore 
-        ratione officia voluptas ipsam.
-      </p>
+      <p className='text-[#e0e0e0] font-normal text-[16px] mb-4 text-center'>{description}</p>
+      <p className='text-[#55e6a5] font-semibold text-center'>Skills Used:</p>
+      <p className='text-[#e0e0e0] font-normal text-center'>{skills}</p>
     </div>
   );
 };
